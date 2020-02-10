@@ -78,7 +78,7 @@ public class WordFrequency {
 	 * @param fileName
 	 */
 	public InputStream loadFile(String fileName) {
-		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(fileName);
+		InputStream inputStream = WordFrequency.class.getClassLoader().getResourceAsStream(fileName);
 		return inputStream;
 	}
 	
