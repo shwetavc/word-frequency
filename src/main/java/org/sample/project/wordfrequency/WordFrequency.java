@@ -107,18 +107,18 @@ public class WordFrequency {
 				Map<String, Integer> wordMapInternal;
 			    while (sc.hasNextLine()) {
 			    	// read each line in the file to capture words
-			    	String[] words = sc.nextLine().split(" ");
-			    	 /* Logic-
-			    	 for each word in the file-
-				    	 if word already exist in wordFreqencyMap then-
-			    	 		if wordMapInternal consists this inputfile entry/key then-
-			    				update the entry in wordMapInternal by incrementing word frequency value
-			    			else
-			    				create a new entry in wordMapInternal for this inputfile with frequency as 1
-				    	 else
-			    			create a new entry in wordMapInternal for this inputfile with frequency as 1
-		  			 	 put wordMapInternal in wordFrequencyMap
-	  			 	  end for */
+			    	String[] words = sc.nextLine().split("[!_.'‘,@?;\" ]");
+					/* Logic-
+					for each word in the file-
+					if word already exist in wordFreqencyMap then-
+						if wordMapInternal consists this inputfile entry/key then-
+							update the entry in wordMapInternal by incrementing word frequency value
+						else
+							create a new entry in wordMapInternal for this inputfile with frequency as 1
+					else
+						create a new entry in wordMapInternal for this inputfile with frequency as 1
+						put wordMapInternal in wordFrequencyMap
+					end for */
 			    	for(String word: words) {
 			    		wordMapInternal = new HashMap<>();
 			    		if(wordFrequencyMap.containsKey(word)) {

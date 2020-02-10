@@ -75,7 +75,7 @@ public class WordFrequencyTest {
 		Scanner sc = new Scanner(inputStream);
 		while(sc.hasNext()) {
 			if(sc.nextLine().equals("half")) {
-				assertEquals("total frequency -> 19", sc.nextLine());
+				assertEquals("total frequency -> 21", sc.nextLine());
 			}
 		}
 		sc.close();
@@ -114,7 +114,7 @@ public class WordFrequencyTest {
 		while(sc.hasNext()) {
 			String content = sc.nextLine();
 			if(content.contains("inputfile3")) {
-				assertEquals("frequency in inputfile3 -> 3",content);
+				assertEquals("frequency in inputfile3 -> 4",content);
 				allAssertionDone = true;
 			}
 		}
