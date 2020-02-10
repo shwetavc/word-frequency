@@ -69,5 +69,14 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<layout>default</layout>
+			<id>wordfrequency</id>
+			<name>GitHub shwetavc Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/shwetavc/word-frequency</url>
+		</repository>
+	</distributionManagement>
 
 </project>
